@@ -1,0 +1,37 @@
+MVP
+These are meant to be shown off on your résumé under a section called “Other Experience”. These show potential employers that you are passionate about what you do and about learning. They also show you are original, as the concepts for these projects should be novel. Whatever type of project you are trying to do, there will be others doing similar projects. If you are just trying to learn something new, you can repeat the same tutorial or recreate the same basic project you’ve seen others do a thousand times. No employer is impressed by seeing “yet another XYZ project”, they’ve seen those before. It just shows that you can follow a tutorial.
+For a résumé project, your goal is to create something interesting and novel. It should be a concept that has not been done a thousand times before. It doesn’t need to be a finished, scalable project that could be turned into a business tomorrow. It just needs to be functional, limited in scope, and polished. It should look finished. You are permitted to use one new technology in a résumé project, IF the company you are applying for uses that technology. Any more new stuff will slow you down and make you take longer to complete the project than your 2 week deadline.
+Time to complete a Résumé Project: ~2 weeks to build a demo/proof of concept, and then 1 week polishing it. Don’t go over 3 weeks.
+
+Need to have
+- each user can log in
+- different users ability to upload music
+- general playlist for everyone
+- music skips from one song to another
+- do the music come with their own images or are they randomly selected images
+- mood rating for each song (upbeat, calm, do no like)
+- users can delete a song that they uploded but cannot delete another users songs
+Nice to have
+- users can create their own playlist
+- filter, to be able to filter through songs with highest mood ratings, or songs by genre
+
+Want to have
+
+step by step
+
+1. view - 
+    landing page - talks about the service, sign up, log in
+    if sign up is clicked, takes you to sign up page
+    if log in is clicked, takes you to an authentication page    
+after sign up/log in, what do users see when they come in? 
+a little pop up button that displays username, with a little pickmeup message, and a close button (refer to picture in the phone or check figma)
+top -  top banner has username, (may have a little picture), search icon( search will be a form, with a search icon in it that changes color when it is hovered on), notification bell and a log out all of which are clickable buttons
+     (this will be on the left) Welcome UserName, a profile picture tab with a little upload link underneath to upload their photo if they wish, or leave it a blank or choose from one of four nail art custom photos || on the right will be a the upload link where you can upload your own music from a file in your computer. form with 2 little buttons, left button is the select button (select file from computer), right is the upload button underneath it. also in the form before the upload button is the song genre 
+
+ left hand side - a list of music that has been uploaded by various users with mood ratings underneath it
+ more prominently displayed is the music bar (refer to the msplayer you created)
+
+ footer: should say your name, and that music is not yours
+     
+
+
