@@ -1,14 +1,15 @@
 body {
     background-color: #014d7a;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main-ctn {
     position: relative;
     background: linear-gradient(64deg, rgb(17, 135, 207) 92%, rgb(9, 96, 148) 23.8%);
-    margin-left: 200px;
-    margin-top: 50px;
-    
+    margin: 70px 10px 50px 200px;
+   
 }
+
 .main-ctn: before 
 {
     content: '';
@@ -17,14 +18,22 @@ body {
 }
 
 .header {
-
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    
 }
 
+h5 {
+    margin-top: 13px;
+    
+}
 a {
     color: black;
     font-family: 'Sacramento', cursive;
     margin: 10px 20px;
     text-decoration: none;
+    align: right;
   }
   
   a:hover {
