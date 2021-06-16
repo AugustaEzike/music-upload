@@ -8,7 +8,7 @@ const mainControllers = require('../controllers/main')
 
 // Changed the from app.get to router.get etc. since we want router used within the app
 //Home Page
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.render('./index.ejs')
 })
 
