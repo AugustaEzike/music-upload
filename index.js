@@ -36,7 +36,7 @@ app.use(
 app.use(passport.initialize())
 app.use(passport.session())
 
-//method override = allows PUT?DELET in form methods
+//method override = allows PUT/DELETE in form methods
 app.use(methodoverride('_method'))
 
 // app.use('/', mainRoutes) // any generic request goes through this route

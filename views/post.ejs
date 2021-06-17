@@ -1,0 +1,44 @@
+<%- include('partials/head') -%> <%- include('partials/header') -%>
+
+<div class="container">
+  <div class="item">
+    
+    <img src="<%= post.audio %> " alt="" />
+    <div class="button-container">
+
+      <% { %>
+      <div class="post-footer">
+      <div class="post-counters">
+      <span>🎼 : <%= post.likes %></span>
+      <span> 🚮 : <%= post.dislikes %></span>
+      </div>
+      <div class="post-buttons">
+      <form action="/post/likePost/<%= post.id %>/?_method=PUT" method="POST">
+        <button>🎼Like</button>
+      </form>
+      <% } %>
+      <% { %>
+      <form action="/post/dislikePost/<%= post.id %>/?_method=PUT" method="POST">
+        <button>🚮Dislike</button>
+      </form>
+      <% } %>
+      </div>
+            <% if(post.user == user.id) { %>
+      <form action="/post/deletePost/<%= post.id %>/?_method=DELETE" method="POST">
+        <button>🗑️Delete</button>
+      </form>
+      <% } %>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="item caption">
+  <h2><%= post.title %></h2>
+    <p><%= post.caption %></p>
+    <div><p>Posted by <%= post.userName %> on <%= new Date(post.createdAt).toLocaleString('en', {weekday: "long", month: 'long', day: 'numeric'}) %></p>
+  </div>
+</div>
+
+<script src="/js/post.js"></script>
+<%- include('partials/footer') -%>

@@ -1,0 +1,32 @@
+<div class="grid">
+    <% posts.forEach(post => { %>
+    <div class="grid-item">
+      <a href="/post/<%= post._id%>">
+        <img src="<%= post.image %> " alt="" />
+      </a>
+      <div class="post-footer">
+        <div class="post-info-container">
+          <h5><%= post.title %></h5>
+          <div>
+          <h5>Posted by: <%= post.userName %> </h5>
+          <span>
+            <%= new Date(post.createdAt).toLocaleString('en', {weekday: "short",
+            month: "short", day: 'numeric' }) %>
+          </span>
+          </div>
+        </div>
+        <% if (feed) { %>
+        <div class="post-info-container">
+          <h5>🎼 : <%= post.likes %></h5>
+          <h5>🚮 : <%= post.dislikes %></h5>
+        </div>
+        <% } %>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+  
+  <!-- if the user hasn't posted anything then yell at them -->
+  <% if(posts.length < 1) { %>
+  <p>Nothing to play here</p>
+  <% } %>

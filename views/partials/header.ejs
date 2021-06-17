@@ -1,0 +1,24 @@
+<body>
+    <header>
+      
+      <% if(user) { %>
+      <nav>
+      <ul>
+        <li>
+            <a href="/profile">Profile</a>
+          </li>
+          <li>
+            <a href="/feed">Feed</a>
+          </li>
+      </ul>
+      <h1>Music</h1>
+        <ul>
+          <li>
+            <a href="/logout">Logout</a>
+          </li>
+        </ul>
+      </nav>
+      <% } else { %>
+      <h1>Music</h1>
+      <% } %> 
+    </header>
