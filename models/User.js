@@ -1,4 +1,4 @@
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt"); //https://www.npmjs.com/package/bcrypt basically used to store passwords
 const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({

@@ -1,0 +1,51 @@
+* { /*   this is a universal selector. resets everything in the brackets to remove the default */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 10px;
+}
+
+
+body {
+    background-color: #03526E;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.main-ctn {
+    position: relative;
+    background: linear-gradient(50deg, rgb(25, 39, 52) 55%, rgb(61, 134, 203) 33.8%);
+    margin: 70px 10px 50px 200px;
+   
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+.navbar ul {
+    display: flex;
+}
+
+
+h3 {
+    margin-top: 13px;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+}
+
+h1, h3, h4, h5 {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+ul a {
+    margin: 10px, 0px;
+}
+
+
+
+
